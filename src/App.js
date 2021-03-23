@@ -24,7 +24,7 @@ class App extends Component {
 
   }
 
-  
+
   addNote(){
     // obtaining id
     let note_id = this.id_generate()
@@ -72,22 +72,16 @@ class App extends Component {
 
  deleteNote(id){
     // obtaining note array from state
-    let notes = this.state.notes
-
-    // obtaining the id 
-    let nIndex = notes.findIndex((n=>{
-      return n.id === id
-    }))
-
-    // pulling the note from array
-    notes.pull(notes[nIndex])
+    const all_notes = JSON.parse(localStorage.getItem('notes'));
+    const notes = all_notes.filter(note => note.id !== id);
 
     // setting localStorage
     localStorage.setItem('notes', JSON.stringify(notes))
     
-    // setting the note array session
-    this.setState({notes: notes})
-        
+    this.setState({
+      notes: all_notes ? all_notes : [],
+    })
+    
   }
 
 

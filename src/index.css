@@ -33,6 +33,11 @@ a:hover{
   cursor: pointer;
 }
 
+#del_text:hover{
+  font-weight: bolder;
+  color:black;
+}
+
 .footer{
   font-family:cursive;
   font-size: 12px;
@@ -58,7 +63,14 @@ button{
 .list-item{
   font-family:cursive;
   font-size: 12px;
-  cursor:pointer
+  cursor:pointer;
+  text-overflow: ellipsis;
+}
+
+.list-item:hover{
+  background-color: #d1ced341;
+  padding:4px;
+  color:#c293df;  
 }
 
 @media(max-width: 792px){
