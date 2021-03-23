@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', ''
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -10,4 +10,77 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.jumbotron{
+  min-height: 100px;
+  max-height: 100px;
+  background-color:#c293df;
+  padding-top: 2px;
+  padding-bottom: 5px;
+  font-family:cursive;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+#del_text{
+  font-family:cursive;
+  color: red;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.footer{
+  font-family:cursive;
+  font-size: 12px;
+}
+
+button{
+  display: inline-flexbox
+}
+
+#notes_list{
+  min-height: 350;
+  max-height: 350px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.selected{
+  color:#c293df;
+  font-weight: bolder;
+  font-size: 13px;
+}
+
+.list-item{
+  font-family:cursive;
+  font-size: 12px;
+  cursor:pointer
+}
+
+@media(max-width: 792px){
+
+  .jumbotron{
+    min-height: 180px;
+    max-height: 180px;
+    background-color:#c293df;
+    padding-top: 2px;
+    padding-bottom: 5px;
+    margin-bottom:5px
+  
+  }
+
+  button{
+    display: inline-block
+  }
+
+  #notes_list{
+    min-height: 115px;
+    max-height: 115px;
+    overflow-y: scroll;
+  }
+  
 }

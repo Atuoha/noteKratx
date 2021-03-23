@@ -7,6 +7,13 @@
   pointer-events: none;
 }
 
+/* .jumbotron{
+  min-height: 100px;
+  max-height: 100px;
+  padding-top: 0px;
+  background: #000;
+} */
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
